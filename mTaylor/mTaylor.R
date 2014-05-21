@@ -127,9 +127,8 @@ myplot <- function(a, TaylorBeTrue, lsquares, xwid, n, err, which.plot){
     panel.abline(h=0, lty = "dotted")
     
   }
-  x <- seq(min(xlim),max(xlim), length = 1000)
   
-  if(which.plot =="Plot Functions"){
+  if(which.plot == "Plot the function"){
     myPlot = xyplot(f(x)~x, xlim = c(min(x), max(x)), panel = mypanel)
     print(myPlot)
   }

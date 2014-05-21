@@ -2,11 +2,12 @@ library(shiny)
 library(mosaic)
 library(lattice)
 library(grid)
-source("mDensity.R", local=TRUE)
 
 shinyServer(
   
   function(input, output, session) {
+    
+    source("mDensity.R", local=TRUE)
     
     output$graph <- renderPlot({
       

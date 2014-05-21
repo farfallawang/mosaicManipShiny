@@ -18,11 +18,12 @@ shinyServer(
     
     output$graph <- renderPlot({
       
-      f <- mosaic::makeFun(as.formula(input$fun))
+      f <<- mosaic::makeFun(as.formula(input$fun))
+      x <<- seq(-5, 5, length = 1000)
       
       # Derivatives of function for Taylor Series
-      dd <- list()
-      for (k in 1:10) {dd[[k]] <- 
+      dd <<- list()
+      for (k in 1:10) {dd[[k]] <<- 
                          mosaic::symbolicD(as.formula(input$fun), .order=k)}
       
       args <- list()

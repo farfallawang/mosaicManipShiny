@@ -6,6 +6,7 @@ source("mHist.R", local=TRUE)
 
 newCol=rgb(0,.2,.8,.6)
 oldCol=rgb(.9,.9,0,.3)
+oldBreaks <- NULL
 
 shinyServer(
   

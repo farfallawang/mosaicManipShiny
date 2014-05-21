@@ -26,7 +26,7 @@ shinyUI(fluidPage(
       
       br(),
       
-      sliderInput("seed", label = h4("Choose random Seed"),
+      sliderInput("seed", label = h4("Choose random seed"),
                   min = 1, max = 100, step = 1, value = 1),
       
       br(),
